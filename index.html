@@ -8,12 +8,23 @@
   <title>BOXING MOISSAGAIS | Muay-Thaï, Kick-Boxing, K-1 & Pancrace</title>
   <meta name="description" content="Site officiel du Boxing Moissagais à Moissac (82). Cours de Kick-Boxing, Muay-Thaï, K-1, Pancrace et organisation du gala international The Fight Legends.">
   <meta name="keywords" content="Boxing Moissagais, Boxe Moissac, Kick-Boxing, Muay-Thai, K-1, Pancrace, Gala The Fight Legends">
+  <link rel="canonical" href="https://VOTRE-DOMAINE.fr/">
+  <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="BOXING MOISSAGAIS | Club officiel de Boxe de Moissac">
   <meta property="og:description" content="Rejoignez le Boxing Moissagais : cours tous niveaux, compétitions et gala international The Fight Legends.">
   <meta property="og:image" content="./assets/2000_60d2162d8c5e0.jpg">
+  <meta property="og:url" content="https://VOTRE-DOMAINE.fr/">
+  <meta property="og:site_name" content="Boxing Moissagais">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BOXING MOISSAGAIS | Muay-Thaï, Kick-Boxing, K-1 & Pancrace">
+  <meta name="twitter:description" content="Site officiel du Boxing Moissagais à Moissac (82). Gala international The Fight Legends le 4 avril 2026.">
+  <meta name="twitter:image" content="https://VOTRE-DOMAINE.fr/assets/2000_60d2162d8c5e0.jpg">
 
   <!-- Favicons -->
   <link rel="shortcut icon" href="./assets/Icon_blue.png" type="image/x-icon">
@@ -24,6 +35,34 @@
   <link rel="stylesheet" href="./assets/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./style.css">
+
+  <!-- Données structurées : événement du Gala -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsEvent",
+    "name": "The Fight Legends - Gala International de Boxe",
+    "startDate": "2026-04-04T19:00:00+02:00",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": {
+      "@type": "Place",
+      "name": "Hall de Paris",
+      "address": { "@type": "PostalAddress", "addressLocality": "Moissac", "postalCode": "82200", "addressCountry": "FR" }
+    },
+    "image": ["https://VOTRE-DOMAINE.fr/assets/2000_60d2162d8c5e0.jpg"],
+    "description": "Gala international de boxe organisé par le Boxing Moissagais, avec 9 ceintures majeures en jeu en Kick-Boxing, K-1 et Muay-Thaï.",
+    "organizer": { "@type": "Organization", "name": "Boxing Moissagais", "url": "https://VOTRE-DOMAINE.fr" },
+    "offers": {
+      "@type": "AggregateOffer",
+      "lowPrice": "20",
+      "highPrice": "25",
+      "priceCurrency": "EUR",
+      "url": "https://VOTRE-DOMAINE.fr/#billetterie",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
 </head>
 
 <body id="top">
@@ -452,7 +491,7 @@
           <address class="contact-info" aria-label="Coordonnées du club">
             <h3>Informations Pratiques</h3>
             <p class="contact-intro">Séances d'essai possibles directement au dojo aux horaires des cours.</p>
-            
+
             <ul class="contact-list">
               <li>
                 <div class="contact-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
@@ -486,7 +525,7 @@
           </address>
 
           <div class="contact-form-wrapper">
-            <form id="contactForm" aria-label="Formulaire de contact">
+            <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" aria-label="Formulaire de contact">
               <div class="form-group">
                 <input type="text" id="name" name="name" class="form-control" placeholder="Votre nom & prénom" required>
               </div>
@@ -518,6 +557,10 @@
       <p>&copy; 2026 <strong>BOXING MOISSAGAIS</strong> – Association Sportive Loi 1901. Tous droits réservés.</p>
     </div>
   </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut de page">
+    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+  </button>
 
   <script src="./main.js"></script>
 </body>

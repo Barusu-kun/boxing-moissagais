@@ -3,32 +3,41 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 
-  <title>BOXING MOISSAGAIS | Muay-Thaï, Kick-Boxing & K-1</title>
-  <meta name="description" content="Site officiel du Boxing Moissagais (82). Cours de Kick-Boxing, Muay-Thaï, K-1, Pancrace. Actualités, inscriptions et billetterie du gala The Fight Legends.">
+  <title>BOXING MOISSAGAIS | Muay-Thaï, Kick-Boxing, K-1 & Pancrace</title>
+  <meta name="description" content="Site officiel du Boxing Moissagais à Moissac (82). Cours de Kick-Boxing, Muay-Thaï, K-1, Pancrace et organisation du gala international The Fight Legends.">
+  <meta name="keywords" content="Boxing Moissagais, Boxe Moissac, Kick-Boxing, Muay-Thai, K-1, Pancrace, Gala The Fight Legends">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BOXING MOISSAGAIS | Club officiel de Boxe de Moissac">
+  <meta property="og:description" content="Rejoignez le Boxing Moissagais : cours tous niveaux, compétitions et gala international The Fight Legends.">
+  <meta property="og:image" content="./assets/2000_60d2162d8c5e0.jpg">
 
   <!-- Favicons -->
   <link rel="shortcut icon" href="./assets/Icon_blue.png" type="image/x-icon">
   <link rel="apple-touch-icon" href="./assets/pwaImage.png">
-  <meta name="theme-color" content="#b91c1c">
+  <meta name="theme-color" content="#0b0e14">
 
-  <!-- Styles CSS (Cache buster v=2.0) -->
+  <!-- Feuilles de style -->
   <link rel="stylesheet" href="./assets/font-awesome.min.css">
-  <link rel="stylesheet" href="./style.css?v=2.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body id="top">
 
-  <!-- Navigation -->
+  <!-- Header / Navigation Fixe -->
   <header class="navbar" role="banner">
     <div class="container nav-container">
-      <a href="#top" class="nav-brand" aria-label="Retour à l'accueil">
+      <a href="#top" class="nav-brand" aria-label="Retour au sommet de la page">
         <img src="./assets/400_64f0d58749112.jpg" alt="Logo Boxing Moissagais" width="44" height="44">
         <span>Boxing Moissagais</span>
       </a>
 
-      <nav class="nav-menu-desktop" aria-label="Menu principal">
+      <!-- Menu Ordinateur -->
+      <nav class="nav-menu-desktop" aria-label="Navigation principale">
         <ul class="nav-list">
           <li><a href="#top" class="nav-link">Accueil</a></li>
           <li><a href="#gala" class="nav-link">The Fight Legends</a></li>
@@ -37,13 +46,16 @@
           <li><a href="#disciplines" class="nav-link">Disciplines</a></li>
           <li><a href="#palmares" class="nav-link">Palmarès</a></li>
           <li><a href="#staff" class="nav-link">Staff</a></li>
-          <li><a href="#documents" class="nav-link">Inscriptions</a></li>
+          <li><a href="#inscriptions" class="nav-link">Inscriptions</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
 
+      <!-- Actions rapides & Toggle Mobile -->
       <div class="nav-actions">
-        <a href="tel:+33673213934" class="nav-icon" aria-label="Nous appeler"><i class="fa fa-phone" aria-hidden="true"></i></a>
-        <a href="mailto:boxing-moissagais@hotmail.fr" class="nav-icon" aria-label="Nous envoyer un email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a href="tel:+33673213934" class="nav-icon" aria-label="Appeler le club"><i class="fa fa-phone" aria-hidden="true"></i></a>
+        <a href="mailto:boxing-moissagais@hotmail.fr" class="nav-icon" aria-label="Envoyer un e-mail"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/boxing.moissagais" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="Page Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         <button class="mobile-toggle" id="drawer-toggle" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Ouvrir le menu mobile">
           <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
@@ -51,56 +63,59 @@
     </div>
   </header>
 
-  <!-- Tiroir Mobile -->
+  <!-- Tiroir Navigation Mobile -->
   <div class="drawer-overlay" id="drawer-overlay" aria-hidden="true"></div>
   <aside class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
-    <nav aria-label="Menu mobile">
+    <nav aria-label="Menu navigation mobile">
       <ul class="mobile-nav-list">
         <li><a href="#top" class="drawer-link"><i class="fa fa-home" aria-hidden="true"></i> Accueil</a></li>
-        <li><a href="#gala" class="drawer-link"><i class="fa fa-trophy" aria-hidden="true"></i> Gala 2026</a></li>
+        <li><a href="#gala" class="drawer-link"><i class="fa fa-trophy" aria-hidden="true"></i> Gala The Fight Legends</a></li>
         <li><a href="#billetterie" class="drawer-link"><i class="fa fa-ticket" aria-hidden="true"></i> Billetterie</a></li>
         <li><a href="#sponsors" class="drawer-link"><i class="fa fa-handshake-o" aria-hidden="true"></i> Sponsors</a></li>
         <li><a href="#disciplines" class="drawer-link"><i class="fa fa-shield" aria-hidden="true"></i> Disciplines</a></li>
         <li><a href="#palmares" class="drawer-link"><i class="fa fa-star" aria-hidden="true"></i> Palmarès</a></li>
         <li><a href="#staff" class="drawer-link"><i class="fa fa-users" aria-hidden="true"></i> Staff</a></li>
-        <li><a href="#documents" class="drawer-link"><i class="fa fa-download" aria-hidden="true"></i> Inscriptions</a></li>
+        <li><a href="#inscriptions" class="drawer-link"><i class="fa fa-download" aria-hidden="true"></i> Inscriptions</a></li>
+        <li><a href="#contact" class="drawer-link"><i class="fa fa-map-marker" aria-hidden="true"></i> Contact & Horaires</a></li>
       </ul>
     </nav>
   </aside>
 
   <main>
-    <!-- Hero Section -->
-    <section class="hero" aria-label="Section d'accueil">
+    <!-- Section Hero -->
+    <section class="hero" aria-label="Présentation du club">
       <div class="container hero-content">
         <span class="badge"><i class="fa fa-certificate" aria-hidden="true"></i> Club Affilié FFKMDA • Moissac (82)</span>
         <h1 class="hero-title">BOXING MOISSAGAIS</h1>
-        <p class="hero-desc">L'art du combat, de la discipline et du respect : Muay-Thaï, Kick-Boxing, K-1, Pancrace & Boxe Éducative.</p>
+        <p class="hero-desc">Muay-Thaï, Kick-Boxing, K-1, Pancrace & Boxe Éducative au Dojo Municipal de Moissac.</p>
 
         <article class="hero-card">
-          <h2><i class="fa fa-bullhorn" aria-hidden="true"></i> Projets Saison 2025 / 2026</h2>
+          <h2><i class="fa fa-bullhorn" aria-hidden="true"></i> Projets & Objectifs Saison 2025 / 2026</h2>
           <ul class="hero-features">
-            <li><strong>🥊 Compétitions :</strong> Conquête des titres régionaux Occitanie, Championnats de France et d'Europe.</li>
-            <li><strong>🏆 Gala International :</strong> Soirée <em>« The Fight Legends »</em> le <strong>4 avril 2026</strong> au Hall de Paris avec 9 ceintures majeures !</li>
+            <li><strong>🥊 Compétitions :</strong> Conquête des titres régionaux Occitanie, Championnats de France et échéances européennes.</li>
+            <li><strong>🏆 Gala International :</strong> Soirée exceptionnelle <em>« The Fight Legends »</em> le <strong>4 avril 2026</strong> au Hall de Paris avec 9 ceintures majeures en jeu !</li>
           </ul>
         </article>
 
         <div class="hero-actions">
           <a href="#billetterie" class="btn btn-primary"><i class="fa fa-ticket" aria-hidden="true"></i> Billetterie Gala 2026</a>
-          <a href="#documents" class="btn btn-outline"><i class="fa fa-download" aria-hidden="true"></i> Dossiers d'Inscription</a>
+          <a href="#inscriptions" class="btn btn-outline"><i class="fa fa-download" aria-hidden="true"></i> Fiches d'Inscription</a>
         </div>
       </div>
     </section>
 
-    <!-- Gala & Compte à Rebours -->
+    <!-- Section Gala The Fight Legends -->
     <section class="section section-alt" id="gala">
       <div class="container">
         <header class="section-header">
+          <span class="section-tag">Événement International</span>
           <h2 class="section-title">The Fight Legends</h2>
-          <p class="section-subtitle">Le Grand Gala International de Boxe à Moissac</p>
+          <p class="section-subtitle">Gala International de Boxe au Hall de Paris (Moissac) • Samedi 4 Avril 2026 à 19h00</p>
         </header>
 
+        <!-- Compte à Rebours -->
         <article class="countdown-wrapper" aria-label="Compte à rebours avant le gala">
-          <h3><i class="fa fa-clock-o" aria-hidden="true"></i> Début de l'événement dans :</h3>
+          <h3><i class="fa fa-clock-o" aria-hidden="true"></i> Coup d'envoi de l'événement dans :</h3>
           <div class="countdown-grid" id="countdown-timer">
             <div class="countdown-item"><span class="countdown-val" id="cd-days">00</span><span class="countdown-lbl">Jours</span></div>
             <div class="countdown-item"><span class="countdown-val" id="cd-hours">00</span><span class="countdown-lbl">Heures</span></div>
@@ -109,47 +124,52 @@
           </div>
         </article>
 
+        <!-- Vidéo & Descriptif -->
         <div class="gala-grid">
           <div class="video-container">
-            <video controls poster="./assets/normal_69aadb9db1eaa-thumbnail.jpg" playsinline preload="metadata" aria-label="Vidéo promotionnelle">
+            <video controls poster="./assets/normal_69aadb9db1eaa-thumbnail.jpg" playsinline preload="metadata" aria-label="Teaser officiel du gala">
               <source src="./assets/normal_69aadb9db1eaa.mp4" type="video/mp4">
-              Votre navigateur ne supporte pas la lecture de vidéos MP4.
+              Votre navigateur ne prend pas en charge la lecture de vidéos MP4.
             </video>
           </div>
 
           <div class="gala-info">
             <span class="badge">Samedi 4 Avril 2026</span>
-            <h3>Une soirée sportive d'exception</h3>
-            <p>Le <strong>Hall de Paris</strong> se transforme en arène pour accueillir des affrontements explosifs entre les meilleurs boxeurs.</p>
+            <h3>Une arène d'exception au Hall de Paris</h3>
+            <p>Le <strong>Boxing Moissagais</strong> réunit les plus grands athlètes pour une soirée de combats de haut niveau en Kick-Boxing, K-1 et Muay-Thaï.</p>
             <ul class="gala-features-list">
               <li><i class="fa fa-trophy" aria-hidden="true"></i> <strong>9 Ceintures officielles</strong> disputées lors de la soirée.</li>
-              <li><i class="fa fa-star" aria-hidden="true"></i> Combats professionnels et amateurs de très haut niveau.</li>
-              <li><i class="fa fa-cutlery" aria-hidden="true"></i> Tables VIP avec dîner gastronomique servi au bord du ring.</li>
+              <li><i class="fa fa-globe" aria-hidden="true"></i> Combats professionnels et amateurs internationaux.</li>
+              <li><i class="fa fa-cutlery" aria-hidden="true"></i> Tables VIP avec service traiteur haut de gamme en bord de ring.</li>
             </ul>
+            <a href="#billetterie" class="btn btn-primary"><i class="fa fa-ticket" aria-hidden="true"></i> Réserver vos places</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Billetterie -->
+    <!-- Section Billetterie -->
     <section class="section" id="billetterie">
       <div class="container">
         <header class="section-header">
-          <h2 class="section-title">Billetterie & Réservations</h2>
-          <p class="section-subtitle">Choisissez votre expérience pour le gala</p>
+          <span class="section-tag">Réservations</span>
+          <h2 class="section-title">Billetterie & Tarifs</h2>
+          <p class="section-subtitle">Choisissez votre formule d'entrée pour la soirée</p>
         </header>
 
         <div class="pricing-grid">
           <article class="pricing-card">
             <header>
               <h3>Entrée Gradins</h3>
-              <p class="pricing-desc">Vue panoramique sur le ring</p>
+              <p class="pricing-desc">Placement libre en tribune</p>
               <div class="price-value">20 €</div>
             </header>
             <ul class="pricing-features">
               <li><i class="fa fa-check" aria-hidden="true"></i> Accès à l'ensemble des combats</li>
-              <li><i class="fa fa-check" aria-hidden="true"></i> Placement libre en tribune</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i> Vue panoramique sur le ring</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i> Buvette et restauration sur place</li>
             </ul>
+            <a href="#contact" class="btn btn-outline">Réserver</a>
           </article>
 
           <article class="pricing-card vip-card">
@@ -162,7 +182,9 @@
             <ul class="pricing-features">
               <li><i class="fa fa-check" aria-hidden="true"></i> Places assises numérotées</li>
               <li><i class="fa fa-check" aria-hidden="true"></i> Vue immersive au bord du ring</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i> Proximité directe avec les boxeurs</li>
             </ul>
+            <a href="#contact" class="btn btn-primary">Réserver</a>
           </article>
 
           <article class="pricing-card table-card">
@@ -172,8 +194,9 @@
               <div class="price-value gold">Sur Demande</div>
             </header>
             <ul class="pricing-features">
-              <li><i class="fa fa-check" aria-hidden="true"></i> Dîner gastronomique complet</li>
-              <li><i class="fa fa-check" aria-hidden="true"></i> Traiteur : <em>Valérie Pons</em></li>
+              <li><i class="fa fa-check" aria-hidden="true"></i> Dîner gastronomique complet servi à table</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i> Traiteur : <em>Restaurant du Fort (Valérie Pons)</em></li>
+              <li><i class="fa fa-check" aria-hidden="true"></i> Emplacement VIP privilégié</li>
             </ul>
             <a href="tel:+33673213934" class="btn btn-gold"><i class="fa fa-phone" aria-hidden="true"></i> 06 73 21 39 34</a>
           </article>
@@ -181,131 +204,180 @@
 
         <aside class="qr-banner">
           <div class="qr-text">
-            <h3><i class="fa fa-qrcode" aria-hidden="true"></i> Achat en ligne simplifié</h3>
-            <p>Scannez directement ce QR-Code avec votre appareil photo pour accéder à la billetterie.</p>
+            <h3><i class="fa fa-qrcode" aria-hidden="true"></i> Accès direct à la vente en ligne</h3>
+            <p>Scannez ce QR-Code avec l'appareil photo de votre smartphone pour accéder à la billetterie officielle.</p>
           </div>
-          <img src="./assets/2000_69aadf74f2a40.png" alt="QR Code d'accès à la billetterie en ligne" width="140" height="140">
+          <div class="qr-image-wrapper">
+            <img src="./assets/2000_69aadf74f2a40.png" alt="QR Code d'accès à la billetterie" width="140" height="140">
+          </div>
         </aside>
       </div>
     </section>
 
-    <!-- Sponsors -->
+    <!-- Section Sponsors -->
     <section class="section section-alt" id="sponsors">
       <div class="container">
         <header class="section-header">
-          <h2 class="section-title">Nos Sponsors & Partenaires</h2>
-          <p class="section-subtitle">Merci aux entreprises qui rendent ce gala possible</p>
+          <span class="section-tag">Partenaires</span>
+          <h2 class="section-title">Nos Sponsors Officiels</h2>
+          <p class="section-subtitle">Merci aux entreprises qui soutiennent nos athlètes et l'organisation du gala</p>
         </header>
 
         <div class="sponsors-grid">
-          <div class="sponsor-box"><img src="./assets/800_69aae99f35c39.png" alt="Sponsor 1" loading="lazy"></div>
-          <div class="sponsor-box"><img src="./assets/800_69aae82d54f0b.png" alt="Sponsor 2" loading="lazy"></div>
-          <div class="sponsor-box"><img src="./assets/800_69aae570f3940.png" alt="Sponsor 3" loading="lazy"></div>
-          <div class="sponsor-box"><img src="./assets/800_69aae81e87650.png" alt="Sponsor 4" loading="lazy"></div>
-          <div class="sponsor-box"><img src="./assets/800_69aae7bba329d.png" alt="Sponsor 5" loading="lazy"></div>
-          <div class="sponsor-box"><img src="./assets/800_69aae7a1619e8.png" alt="Sponsor 6" loading="lazy"></div>
-          <div class="sponsor-box"><img src="./assets/800_69aae8a773abd.jpg" alt="Sponsor 7" loading="lazy"></div>
-          <div class="sponsor-box"><img src="./assets/800_69aae9efd9635.png" alt="Sponsor 8" loading="lazy"></div>
+          <div class="sponsor-box"><img src="./assets/800_69aae99f35c39.png" alt="Sponsor Gala 1" loading="lazy"></div>
+          <div class="sponsor-box"><img src="./assets/800_69aae82d54f0b.png" alt="Sponsor Gala 2" loading="lazy"></div>
+          <div class="sponsor-box"><img src="./assets/800_69aae570f3940.png" alt="Sponsor Gala 3" loading="lazy"></div>
+          <div class="sponsor-box"><img src="./assets/800_69aae81e87650.png" alt="Sponsor Gala 4" loading="lazy"></div>
+          <div class="sponsor-box"><img src="./assets/800_69aae7bba329d.png" alt="Sponsor Gala 5" loading="lazy"></div>
+          <div class="sponsor-box"><img src="./assets/800_69aae7a1619e8.png" alt="Sponsor Gala 6" loading="lazy"></div>
+          <div class="sponsor-box"><img src="./assets/800_69aae8a773abd.jpg" alt="Sponsor Gala 7" loading="lazy"></div>
+          <div class="sponsor-box"><img src="./assets/800_69aae9efd9635.png" alt="Sponsor Gala 8" loading="lazy"></div>
         </div>
       </div>
     </section>
 
-    <!-- Palmarès -->
-    <section class="section" id="palmares">
+    <!-- Section Disciplines -->
+    <section class="section" id="disciplines">
       <div class="container">
         <header class="section-header">
-          <h2 class="section-title">Palmarès & Hall of Fame</h2>
-          <p class="section-subtitle">Les titres mondiaux, européens et nationaux décrochés par le club</p>
+          <span class="section-tag">Entraînements</span>
+          <h2 class="section-title">Nos Disciplines</h2>
+          <p class="section-subtitle">Des cours adaptés pour tous les niveaux, du loisir à la haute compétition</p>
+        </header>
+
+        <div class="grid-layout">
+          <article class="info-card">
+            <i class="fa fa-hand-rock-o icon" aria-hidden="true"></i>
+            <h3>Muay-Thaï (Boxe Thaï)</h3>
+            <p>Art martial complet utilisant poings, coudes, genoux et tibias. Développement du conditionnement physique, de la rigueur et du respect.</p>
+          </article>
+
+          <article class="info-card">
+            <i class="fa fa-bolt icon" aria-hidden="true"></i>
+            <h3>Kick-Boxing & K-1</h3>
+            <p>Combinaison dynamique de techniques de frappe pieds-poings avec coups de genoux directs. Idéal pour forger vitesse, réflexes et explosivité.</p>
+          </article>
+
+          <article class="info-card">
+            <i class="fa fa-shield icon" aria-hidden="true"></i>
+            <h3>Pancrace & Combat</h3>
+            <p>Discipline complète mêlant frappes debout, projections et combat au sol (clés, soumissions) dans un cadre technique strictement encadré.</p>
+          </article>
+
+          <article class="info-card">
+            <i class="fa fa-graduation-cap icon" aria-hidden="true"></i>
+            <h3>École de Boxe & Loisirs</h3>
+            <p>Séances adaptées aux enfants (dès 7 ans) et adultes débutants (Light Contact). Apprentissage ludique sans coups portés pour forger confiance et condition physique.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Palmarès -->
+    <section class="section section-alt" id="palmares">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Hall of Fame</span>
+          <h2 class="section-title">Palmarès & Titres</h2>
+          <p class="section-subtitle">L'excellence de nos combattants sur les rings nationaux et internationaux</p>
         </header>
 
         <div class="grid-layout">
           <article class="champ-card">
-            <img src="./assets/800_61df0e181177e.jpg" alt="Mohamed Dahbi" loading="lazy" class="champ-img">
+            <img src="./assets/800_61df0e181177e.jpg" alt="Mohamed Dahbi Champion du Monde" loading="lazy" class="champ-img">
             <div class="champ-info">
               <span class="champ-badge gold"><i class="fa fa-trophy" aria-hidden="true"></i> Titre Mondial</span>
               <h3>Mohamed DAHBI</h3>
-              <p>Champion du Monde Kick-Boxing (-70 kg)</p>
+              <p>Champion du Monde professionnel de Kick-Boxing (-70 kg) – 27 mai 2017.</p>
             </div>
           </article>
 
           <article class="champ-card">
-            <img src="./assets/800_6975fb7e0506c.png" alt="Benaïssa Zaïda" loading="lazy" class="champ-img">
+            <img src="./assets/800_6975fb7e0506c.png" alt="Benaïssa Zaïda Champion d'Europe" loading="lazy" class="champ-img">
             <div class="champ-info">
               <span class="champ-badge gold"><i class="fa fa-star" aria-hidden="true"></i> Titre Européen</span>
-              <h3>Benaïssa ZAÏDA</h3>
-              <p>Champion d’Europe Kick-Boxing (-80 kg) à 16 ans</p>
+              <h3>Benaïssa ZAÏDA (16 ans)</h3>
+              <p>Champion d’Europe Kick-Boxing Full Contact (-80 kg) lors de l'Euro WTFF à Bâle.</p>
             </div>
           </article>
 
           <article class="champ-card">
-            <img src="./assets/800_61df0cc817c51.jpg" alt="Mohamed Dahbi Europe" loading="lazy" class="champ-img">
+            <img src="./assets/800_61df0cc817c51.jpg" alt="Mohamed Dahbi Champion d'Europe" loading="lazy" class="champ-img">
             <div class="champ-info">
               <span class="champ-badge gold"><i class="fa fa-star" aria-hidden="true"></i> Titre Européen</span>
               <h3>Mohamed DAHBI</h3>
-              <p>Champion d’Europe Kick-Boxing (-70 kg) - 2016</p>
+              <p>Champion d’Europe Kick-Boxing (-70 kg) – Saison 2016.</p>
             </div>
           </article>
 
           <article class="champ-card">
-            <img src="./assets/800_61df0a2941248.jpg" alt="Saïd Laraj" loading="lazy" class="champ-img">
+            <img src="./assets/800_61df0a2941248.jpg" alt="Saïd Laraj Coupe de France" loading="lazy" class="champ-img">
             <div class="champ-info">
               <span class="champ-badge"><i class="fa fa-shield" aria-hidden="true"></i> Titre National</span>
               <h3>Saïd LARAJ</h3>
-              <p>Vainqueur Coupe de France (-63.5 kg)</p>
+              <p>Vainqueur de la Coupe de France de Kick-Boxing (-63.5 kg) dès sa première saison.</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Staff -->
-    <section class="section section-alt" id="staff">
+    <!-- Section Staff -->
+    <section class="section" id="staff">
       <div class="container">
         <header class="section-header">
+          <span class="section-tag">Encadrement</span>
           <h2 class="section-title">Le Staff & Partenaires</h2>
-          <p class="section-subtitle">L'encadrement technique et institutionnel du club</p>
+          <p class="section-subtitle">L'équipe investie au service des licenciés et de la ville</p>
         </header>
 
         <div class="grid-layout">
           <article class="staff-card">
-            <img class="staff-avatar" src="./assets/800_61df014b07339_filter_61df020f69960.jpg" alt="Mounir EL AIDAOUI" loading="lazy">
+            <div class="avatar-container">
+              <img class="staff-avatar" src="./assets/800_61df014b07339_filter_61df020f69960.jpg" alt="Portrait de Mounir EL AIDAOUI" loading="lazy">
+            </div>
             <h3>Mounir EL AIDAOUI</h3>
             <p class="role">Président & Entraîneur Principal</p>
-            <p class="staff-desc">Fondateur du Boxing Moissagais, formateur de l'école de boxe.</p>
+            <p class="staff-desc">Fondateur du club, formateur dévoué de l'école de boxe et de la Boxe Academy 82.</p>
           </article>
 
           <article class="staff-card">
-            <div class="staff-avatar-placeholder"><i class="fa fa-user" aria-hidden="true"></i></div>
+            <div class="avatar-container">
+              <div class="staff-avatar-placeholder"><i class="fa fa-user" aria-hidden="true"></i></div>
+            </div>
             <h3>Ylénia SIERRA LOPEZ</h3>
             <p class="role">Trésorière & Secrétaire</p>
-            <p class="staff-desc">Gestion administrative et organisation logistique de l'association.</p>
+            <p class="staff-desc">Gestion administrative, suivi des licences et logistique de l'association.</p>
           </article>
 
           <article class="staff-card">
             <div class="staff-logo-wrapper">
-              <img src="./assets/800_61df1cbf536fe_filter_61dfdd3062a0c.jpg" alt="Ville de Moissac" loading="lazy" class="staff-logo">
+              <img src="./assets/800_61df1cbf536fe_filter_61dfdd3062a0c.jpg" alt="Logo de la Ville de Moissac" loading="lazy" class="staff-logo">
             </div>
             <h3>Ville de Moissac</h3>
             <p class="role">Partenaire Institutionnel</p>
+            <p class="staff-desc">Mise à disposition du Dojo Municipal et soutien fidèle aux projets du club.</p>
           </article>
 
           <article class="staff-card">
             <div class="staff-logo-wrapper">
-              <img src="./assets/800_61e00abde69dc_filter_61e00b2138d2b.png" alt="FFKMDA" loading="lazy" class="staff-logo">
+              <img src="./assets/800_61e00abde69dc_filter_61e00b2138d2b.png" alt="Logo FFKMDA" loading="lazy" class="staff-logo">
             </div>
             <h3>FFKMDA</h3>
             <p class="role">Fédération Officielle</p>
+            <p class="staff-desc">Fédération délégataire officielle pour les disciplines pieds-poings.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Documents -->
-    <section class="section" id="documents">
+    <!-- Section Documents / Inscriptions -->
+    <section class="section section-alt" id="inscriptions">
       <div class="container">
         <header class="section-header">
+          <span class="section-tag">Téléchargements</span>
           <h2 class="section-title">Documents & Inscriptions</h2>
-          <p class="section-subtitle">Téléchargez vos formulaires et certificats officiels</p>
+          <p class="section-subtitle">Téléchargez les formulaires obligatoires pour rejoindre le Boxing Moissagais</p>
         </header>
 
         <div class="docs-list">
@@ -313,39 +385,140 @@
             <div class="doc-meta">
               <i class="fa fa-file-word-o doc-icon text-blue" aria-hidden="true"></i>
               <div>
-                <h3 class="doc-name">Fiche d'Inscription Officielle (2025/2026)</h3>
+                <h3 class="doc-name">Fiche d'Inscription Officielle (Saison 2025/2026)</h3>
                 <p class="doc-sub">Dossier obligatoire pour valider votre licence sportive</p>
               </div>
             </div>
-            <a href="./assets/normal_66c4cdfc66459.docx" download class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i> Télécharger</a>
+            <a href="./assets/normal_66c4cdfc66459.docx" download class="btn btn-primary btn-sm"><i class="fa fa-download" aria-hidden="true"></i> Télécharger</a>
+          </article>
+
+          <article class="doc-card">
+            <div class="doc-meta">
+              <i class="fa fa-file-word-o doc-icon text-blue" aria-hidden="true"></i>
+              <div>
+                <h3 class="doc-name">Autorisation Parentale (Mineurs)</h3>
+                <p class="doc-sub">Autorisation de pratique et soins médicaux pour mineurs</p>
+              </div>
+            </div>
+            <a href="./assets/normal_66c4ce5946943.docx" download class="btn btn-primary btn-sm"><i class="fa fa-download" aria-hidden="true"></i> Télécharger</a>
+          </article>
+
+          <article class="doc-card">
+            <div class="doc-meta">
+              <i class="fa fa-file-word-o doc-icon text-blue" aria-hidden="true"></i>
+              <div>
+                <h3 class="doc-name">Autorisation du Droit à l'Image</h3>
+                <p class="doc-sub">Majeurs & Mineurs (pour les publications et galas)</p>
+              </div>
+            </div>
+            <a href="./assets/normal_66c4ceb392a3a.docx" download class="btn btn-primary btn-sm"><i class="fa fa-download" aria-hidden="true"></i> Télécharger</a>
           </article>
 
           <article class="doc-card">
             <div class="doc-meta">
               <i class="fa fa-file-pdf-o doc-icon text-red" aria-hidden="true"></i>
               <div>
-                <h3 class="doc-name">Certificat Médical – Compétition</h3>
-                <p class="doc-sub">Document médical obligatoire pour les combattants</p>
+                <h3 class="doc-name">Certificat Médical – Compétition Plein Contact</h3>
+                <p class="doc-sub">Modèle officiel FFKMDA obligatoire pour compétiteurs</p>
               </div>
             </div>
-            <a href="./assets/normal_66c4cf9447100.pdf" download class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i> Télécharger</a>
+            <a href="./assets/normal_66c4cf9447100.pdf" download class="btn btn-primary btn-sm"><i class="fa fa-download" aria-hidden="true"></i> Télécharger</a>
+          </article>
+
+          <article class="doc-card">
+            <div class="doc-meta">
+              <i class="fa fa-file-pdf-o doc-icon text-red" aria-hidden="true"></i>
+              <div>
+                <h3 class="doc-name">Certificat Médical – Light Contact & Loisirs</h3>
+                <p class="doc-sub">Pour la pratique loisir et éducative sans frappe appuyée</p>
+              </div>
+            </div>
+            <a href="./assets/normal_66c4cf7aa54d3.pdf" download class="btn btn-primary btn-sm"><i class="fa fa-download" aria-hidden="true"></i> Télécharger</a>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- Section Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Nous Trouver</span>
+          <h2 class="section-title">Contact & Horaires</h2>
+          <p class="section-subtitle">Rejoignez-nous au dojo ou envoyez votre message</p>
+        </header>
+
+        <div class="contact-layout">
+          <address class="contact-info" aria-label="Coordonnées du club">
+            <h3>Informations Pratiques</h3>
+            <p class="contact-intro">Séances d'essai possibles directement au dojo aux horaires des cours.</p>
+            
+            <ul class="contact-list">
+              <li>
+                <div class="contact-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                <div>
+                  <strong>Lieu d'entraînement :</strong><br>
+                  DOJO Municipal, 20 chemin de Calas, 82200 Moissac
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                <div>
+                  <strong>Créneaux d'entraînement :</strong><br>
+                  Mardi et Jeudi de 18h00 à 20h30
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                <div>
+                  <strong>Téléphone :</strong><br>
+                  <a href="tel:+33673213934" class="contact-link">06 73 21 39 34</a>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                <div>
+                  <strong>E-mail officiel :</strong><br>
+                  <a href="mailto:boxing-moissagais@hotmail.fr" class="contact-link">boxing-moissagais@hotmail.fr</a>
+                </div>
+              </li>
+            </ul>
+          </address>
+
+          <div class="contact-form-wrapper">
+            <form id="contactForm" aria-label="Formulaire de contact">
+              <div class="form-group">
+                <input type="text" id="name" name="name" class="form-control" placeholder="Votre nom & prénom" required>
+              </div>
+              <div class="form-group">
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Numéro de téléphone">
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" class="form-control" placeholder="Adresse e-mail" required>
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" class="form-control" rows="4" placeholder="Votre message ou demande d'information..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100"><i class="fa fa-paper-plane" aria-hidden="true"></i> Envoyer le message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <!-- Footer -->
   <footer class="footer" role="contentinfo">
     <div class="container">
       <ul class="footer-socials" aria-label="Réseaux sociaux">
-        <li><a href="https://www.facebook.com/boxing.moissagais" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="Visiter notre page Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.facebook.com/boxing.moissagais" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="Page Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="tel:+33673213934" class="nav-icon" aria-label="Téléphone"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+        <li><a href="mailto:boxing-moissagais@hotmail.fr" class="nav-icon" aria-label="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
       </ul>
-      <p>&copy; 2026 <strong>BOXING MOISSAGAIS</strong> – Association Sportive Loi 1901.</p>
+      <p>&copy; 2026 <strong>BOXING MOISSAGAIS</strong> – Association Sportive Loi 1901. Tous droits réservés.</p>
     </div>
   </footer>
 
-  <!-- Script (Cache buster v=2.0) -->
-  <script src="./main.js?v=2.0" defer></script>
+  <script src="./main.js"></script>
 </body>
 </html>

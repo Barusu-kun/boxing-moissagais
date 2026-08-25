@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Gestion du Menu Mobile
+    // 1. Gestion du Tiroir Mobile ARIA
     const drawerToggle = document.getElementById('drawer-toggle');
     const mobileDrawer = document.getElementById('mobile-drawer');
     const drawerOverlay = document.getElementById('drawer-overlay');
@@ -29,14 +29,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 2. Compte à Rebours (Gala : 4 Avril 2026 19:00)
+    // 2. Gestion du Formulaire de Contact
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Merci pour votre message ! Notre équipe vous répondra très rapidement.');
+            contactForm.reset();
+        });
+    }
+
+    // 3. Compte à Rebours (Gala : 4 Avril 2026 à 19h00)
     const elDays = document.getElementById('cd-days');
     const elHours = document.getElementById('cd-hours');
     const elMins = document.getElementById('cd-mins');
     const elSecs = document.getElementById('cd-secs');
 
     function updateCountdown() {
-        if(!elDays) return;
+        if (!elDays) return;
         const targetDate = new Date('2026-04-04T19:00:00').getTime();
         const now = new Date().getTime();
         const diff = targetDate - now;
@@ -51,6 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
             elHours.textContent = String(h).padStart(2, '0');
             elMins.textContent = String(m).padStart(2, '0');
             elSecs.textContent = String(s).padStart(2, '0');
+        } else {
+            elDays.textContent = '00';
+            elHours.textContent = '00';
+            elMins.textContent = '00';
+            elSecs.textContent = '00';
         }
     }
 
